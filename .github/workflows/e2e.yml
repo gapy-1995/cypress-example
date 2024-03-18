@@ -10,15 +10,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.1
-      - name: insall nod
+      - name: Install dependencies
+        run: npm install
       - name: Cypress run e2e
         uses: cypress-io/github-action@v6
         with:
-          build: npm run build
-          start: npm start
-          install: npm install
           browser: chrome
           spec: |
             e2e/saucedemo/*.cy.js
             e2e/1-getting-started
-          report: true
