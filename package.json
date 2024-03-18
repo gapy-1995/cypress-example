@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "cypress": "^13.6.6"
+  },
+  "scripts": {
+    "start": "npx cypress run --spec 'cypress\\e2e\\saucedemo\\TC1_buyPackageSuccess.cy.js' --browser chrome"
+  }
+}
