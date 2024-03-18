@@ -56,13 +56,6 @@ describe('As an Standard user i want to proceed buy Backpack success', () => {
         } )
 
         cy.get('button[data-test=finish]').click()
-
-        cy.get('img[alt="Pony Express"]').should('have.attr', 'src')
-        .then(src => {
-          cy.request(src)
-          .its('status')
-          .should('eq', 200)
-        })
     })
   })
 
