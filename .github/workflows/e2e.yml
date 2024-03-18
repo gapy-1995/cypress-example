@@ -1,7 +1,7 @@
 name: run cypress test for practice
 on:
   push:
-  branches:
+    branches:
     - e2e
 
 jobs:
